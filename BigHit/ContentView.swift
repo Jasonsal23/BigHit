@@ -12,10 +12,10 @@ struct ContentView: View {
     var body: some View {
         
             TabView{
-                QueueView()
+                AppointmentView()
                     .tabItem(){
-                        Image(systemName: "checkmark.rectangle.fill")
-                        Text("Check In")
+                        Image(systemName: "calendar.badge.clock")
+                        Text("Appointments")
                     }
                 LocationsView()
                     .tabItem(){

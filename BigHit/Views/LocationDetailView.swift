@@ -93,6 +93,9 @@ extension LocationDetailView{
                  destination: URL(string:
                                     "https://www.barbershoplasvegas.com/")!)
             .font(.headline)
+            Link("Book An Appointment",
+                 destination: URL(string:"https://getsquire.com/booking/brands/big-hit-barbershop-las-vegas")!)
+            .font(.headline)
          }
     }
     

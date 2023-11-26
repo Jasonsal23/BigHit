@@ -14,6 +14,7 @@
 		96DEBCC42AD47ADD00D0F1CA /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEBCC32AD47ADD00D0F1CA /* PasswordView.swift */; };
 		96DEBCC62AD491EE00D0F1CA /* NotificationPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEBCC52AD491EE00D0F1CA /* NotificationPopup.swift */; };
 		96DEBCCA2AD6089C00D0F1CA /* BrightnessPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEBCC92AD6089C00D0F1CA /* BrightnessPreferencesView.swift */; };
+		96EDA9BD2B13EADF00911C67 /* AppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EDA9BC2B13EADF00911C67 /* AppointmentView.swift */; };
 		96EE86792A71A535001C5441 /* BigHitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EE86782A71A535001C5441 /* BigHitApp.swift */; };
 		96EE86802A71A537001C5441 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96EE867F2A71A537001C5441 /* Preview Assets.xcassets */; };
 		96EE86872A71A6AE001C5441 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96EE86862A71A6AE001C5441 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		96DEBCC32AD47ADD00D0F1CA /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
 		96DEBCC52AD491EE00D0F1CA /* NotificationPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPopup.swift; sourceTree = "<group>"; };
 		96DEBCC92AD6089C00D0F1CA /* BrightnessPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessPreferencesView.swift; sourceTree = "<group>"; };
+		96EDA9BC2B13EADF00911C67 /* AppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentView.swift; sourceTree = "<group>"; };
 		96EE86752A71A535001C5441 /* BigHit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigHit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96EE86782A71A535001C5441 /* BigHitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigHitApp.swift; sourceTree = "<group>"; };
 		96EE867F2A71A537001C5441 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				96DEBCC32AD47ADD00D0F1CA /* PasswordView.swift */,
 				96DEBCC52AD491EE00D0F1CA /* NotificationPopup.swift */,
 				96DEBCC92AD6089C00D0F1CA /* BrightnessPreferencesView.swift */,
+				96EDA9BC2B13EADF00911C67 /* AppointmentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				96EE868C2A71A830001C5441 /* Location.swift in Sources */,
 				96DEBCCA2AD6089C00D0F1CA /* BrightnessPreferencesView.swift in Sources */,
 				96B66E692A93FAA2007F0A4A /* OwnerView.swift in Sources */,
+				96EDA9BD2B13EADF00911C67 /* AppointmentView.swift in Sources */,
 				96EE86962A71B42A001C5441 /* LocationPreviewView.swift in Sources */,
 				96EE86792A71A535001C5441 /* BigHitApp.swift in Sources */,
 				9601D7C92A73BF62000D006A /* QueueView.swift in Sources */,
