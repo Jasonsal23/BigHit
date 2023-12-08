@@ -20,7 +20,7 @@ struct AppointmentView: View {
 
             // Add WebView with a web link
             WebView(urlString: "https://getsquire.com/booking/brands/big-hit-barbershop-las-vegas")
-                .frame(maxWidth: maxWidthForIpad)
+                .edgesIgnoringSafeArea(.all)
         }
     }
 }

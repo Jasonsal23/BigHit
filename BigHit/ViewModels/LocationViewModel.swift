@@ -8,6 +8,7 @@
 import Foundation
 import MapKit
 import SwiftUI
+import AppTrackingTransparency
 
 class LocationsViewModel: ObservableObject{
     
@@ -135,4 +136,27 @@ class LocationsViewModel: ObservableObject{
         saveEstimatedWaitTimeToUserDefaults()
         objectWillChange.send()
     }
+    
+    func requestTrackingPermissionIfNeeded() {
+            if #available(iOS 14.5, *) {
+                ATTrackingManager.requestTrackingAuthorization { status in
+                    DispatchQueue.main.async {
+                        switch status {
+                        case .authorized:
+                            // Tracking is authorized, you can continue with your logic.
+                            break
+                        case .denied, .restricted:
+                            // Handle the case where tracking is not authorized.
+                            print("Tracking not authorized")
+                        case .notDetermined:
+                            // Tracking permission not yet determined.
+                            print("Tracking permission not yet determined")
+                        @unknown default:
+                            // Handle any unknown cases.
+                            print("Unknown tracking authorization status")
+                        }
+                    }
+                }
+            }
+        }
 }
