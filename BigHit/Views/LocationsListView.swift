@@ -7,12 +7,43 @@
 
 import SwiftUI
 
-struct Locations_ListView: View {
+struct LocationsListView: View {
+    
+    @EnvironmentObject private var vm: LocationsViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(vm.locations) { location in
+                Button {
+                    vm.showNextLocation(location: location)
+                } label: {
+                    HStack {
+                        if let imageName = location.imageNames.first {
+                            Image(imageName)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 45, height: 45)
+                                .cornerRadius(10)
+                        }
+                        VStack(alignment: .leading){
+                            Text(location.name)
+                            Text(location.cityName)
+                                .font(.headline)
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                }
+                .padding(.vertical, 4)
+                .listRowBackground(Color.clear)
+            }
+        }
+        .listStyle(PlainListStyle())
     }
 }
 
-#Preview {
-    Locations_ListView()
+struct LocationsListView_Previews: PreviewProvider {
+    static var previews: some View {
+        LocationsListView()
+            .environmentObject(LocationsViewModel())
+    }
 }

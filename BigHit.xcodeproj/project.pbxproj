@@ -24,6 +24,7 @@
 		96EE86962A71B42A001C5441 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EE86952A71B42A001C5441 /* LocationPreviewView.swift */; };
 		96EE86982A71CCF4001C5441 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EE86972A71CCF4001C5441 /* LocationDetailView.swift */; };
 		96EE869C2A7221E4001C5441 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EE869B2A7221E4001C5441 /* LocationViewModel.swift */; };
+		96FCEA032B72FE4C00E3F0A3 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FCEA022B72FE4C00E3F0A3 /* LocationsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		96EE86952A71B42A001C5441 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 		96EE86972A71CCF4001C5441 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		96EE869B2A7221E4001C5441 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		96FCEA022B72FE4C00E3F0A3 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locations\U0010ListView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				96DEBCC52AD491EE00D0F1CA /* NotificationPopup.swift */,
 				96DEBCC92AD6089C00D0F1CA /* BrightnessPreferencesView.swift */,
 				96EDA9BC2B13EADF00911C67 /* AppointmentView.swift */,
+				96FCEA022B72FE4C00E3F0A3 /* LocationsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				967E028D2A72713300E0D77A /* ContentView.swift in Sources */,
 				965EA57F2A73A23D0061F0FA /* ProfileCreationView.swift in Sources */,
 				96DEBCC42AD47ADD00D0F1CA /* PasswordView.swift in Sources */,
+				96FCEA032B72FE4C00E3F0A3 /* LocationsListView.swift in Sources */,
 				96EE86982A71CCF4001C5441 /* LocationDetailView.swift in Sources */,
 				96EE868C2A71A830001C5441 /* Location.swift in Sources */,
 				96DEBCCA2AD6089C00D0F1CA /* BrightnessPreferencesView.swift in Sources */,

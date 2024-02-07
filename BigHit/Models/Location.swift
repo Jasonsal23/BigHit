@@ -12,10 +12,17 @@ struct Location: Identifiable, Equatable{
     
     let name: String
     let cityName: String
+    let city: String
     let contact : String
     let address: String
     let coordinates: CLLocationCoordinate2D
     let description: String
+    let bio: String
+    let sunday: String
+    let monday: String
+    let saturday: String
+    let website: URL?
+    let appointment: URL?
     let imageNames: [String]
     
     var id: String{

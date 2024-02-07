@@ -26,11 +26,20 @@ class LocationsViewModel: ObservableObject{
     @Published var mapLocation: Location{
         didSet{
             updateMapRegion(location: mapLocation)
+            objectWillChange.send()
+            
+            // Handle the appointment URL update here
+                        webViewURL = mapLocation.appointment?.absoluteString ?? ""
         }
     }
     
+    // Additional property to store the web view URL
+        @Published var webViewURL: String = ""
+    
     @Published var mapRegion: MKCoordinateRegion = MKCoordinateRegion()
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.002, longitudeDelta: 0.002)
+    
+    @Published var showLocationsList: Bool = false
     
     //location detail via sheet
     @Published var sheetLocation: Location? = nil
@@ -97,6 +106,19 @@ class LocationsViewModel: ObservableObject{
 
             // Save the updated estimated wait time to UserDefaults
             saveEstimatedWaitTimeToUserDefaults()
+        }
+    }
+    
+    func toggleLocationsList(){
+        withAnimation(.easeInOut){
+            showLocationsList = !showLocationsList
+        }
+    }
+    
+    func showNextLocation(location: Location) {
+        withAnimation(.easeInOut) {
+            mapLocation = location
+            showLocationsList = false
         }
     }
 

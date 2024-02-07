@@ -67,7 +67,7 @@ extension LocationDetailView{
             Link(location.contact, destination: phoneCallURL(phoneNumber: location.contact))
                  .font(.title3)
                  .foregroundColor(.blue)
-            Link("5651 S Grand Canyon Dr #105", destination: locationMapsURL(location: location))
+            Link(location.address, destination: locationMapsURL(location: location))
                  .font(.title3)
                  .foregroundColor(.red)
          }
@@ -78,24 +78,31 @@ extension LocationDetailView{
             Text(location.description)
                 .font(.subheadline)
                 .foregroundColor(.secondary)
-            Text("Home Of The $100 Skip The Line!")
+            Text(location.bio)
                 .font(.subheadline)
                 .foregroundColor(.secondary)
             Text("Hours of Operation:")
                 .font(.title2)
-            Text("Sunday & Monday: Closed")
+            Text(location.sunday)
                 .font(.subheadline)
-            Text("Tuesday - Friday: 8am - 6pm")
+            Text(location.monday)
                 .font(.subheadline)
-            Text("Saturday: 8am - 4pm")
+            Text(location.saturday)
                 .font(.subheadline)
-            Link("Website",
-                 destination: URL(string:
-                                    "https://www.barbershoplasvegas.com/")!)
-            .font(.headline)
-            Link("Book An Appointment",
-                 destination: URL(string:"https://getsquire.com/booking/brands/big-hit-barbershop-las-vegas")!)
-            .font(.headline)
+            if let websiteURL = location.website {
+                        Link("Website", destination: websiteURL)
+                            .font(.headline)
+                    } else {
+                        Text("No Website Available")
+                            .font(.headline)
+                    }
+            if let appointmentURL = location.appointment {
+                        Link("Book An Appointment", destination: appointmentURL)
+                            .font(.headline)
+                    } else {
+                        Text("No Website Available")
+                            .font(.headline)
+                    }
          }
     }
     
